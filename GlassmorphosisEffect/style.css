@@ -1,0 +1,49 @@
+.gallery {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.photo {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+}
+.photo img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  border-radius: 20px;
+}
+.caption {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.photo:hover .glass {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, rgba(41, 32, 32, 0.6));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  top: -257px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.project-link a {
+  color: white;
+  margin-bottom: 15px;
+  text-decoration: none;
+  opacity: 0;
+}
+.photo:hover a {
+  opacity: 1;
+}
